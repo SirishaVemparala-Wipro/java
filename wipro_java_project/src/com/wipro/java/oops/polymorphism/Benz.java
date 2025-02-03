@@ -10,9 +10,9 @@ public class Benz extends Car {
     @Override
     public void display() {
     	// Displaying the details of the Benz car
-        System.out.println("Swift Car brand: " + getBrand());
-        System.out.println("Swift Car model: " + getModel());
-        System.out.println("Swift Car price: " + getPrice());
+        System.out.println("Benz Car brand: " + getBrand());
+        System.out.println("Benz Car model: " + getModel());
+        System.out.println("Benz Car price: " + getPrice());
     }
 
     public static void main(String[] args) {
