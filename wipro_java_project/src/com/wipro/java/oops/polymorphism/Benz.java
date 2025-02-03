@@ -2,27 +2,28 @@
  * 
  */
 package com.wipro.java.oops.polymorphism;
-
+//Importing the Car class from inheritance package
 import com.wipro.java.oops.inheritance.Car;
 
 public class Benz extends Car {
-
+	// Overriding the display method from the Car class
     @Override
     public void display() {
-        // Polymorphism: Overriding display() to add customized behavior
+    	// Displaying the details of the Benz car
         System.out.println("Swift Car brand: " + getBrand());
         System.out.println("Swift Car model: " + getModel());
         System.out.println("Swift Car price: " + getPrice());
     }
 
     public static void main(String[] args) {
-        // Polymorphism: Creating an object of type Car but instantiating it with Swift
+    	 // Creating an object of Benz, which is a subclass of Car
         Car benz = new Benz();
+     // Setting the brand, model, and price for the Benz object using setter methods
         benz.setBrand("Bentley");
         benz.setModel("Toyoto");
         benz.setPrice(900000);
-        
-        benz.display();  // Calls the overridden display() method in Swift
+        // Calling the overridden display method of Benz class
+        benz.display();  
     }
 }
 
