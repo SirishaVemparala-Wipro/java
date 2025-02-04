@@ -2,7 +2,8 @@ package com.wipro.java.oops.test.polymorphism;
 
 public class Bike extends Vehicle {
     // Overriding the start method for Bike
-    void start() {
+    @Override
+    public void start() {
         System.out.println("Bike is starting");
     }
 }
