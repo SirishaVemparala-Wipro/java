@@ -32,7 +32,7 @@ public class MapImplementation {
 		
 		System.out.println("\nIterating through the map:");
 		
-		for(Map.Entry<Integer,String> entry:map.entrySet()) {//iterating through hashmap using entry set
+		for(Map.Entry<Integer,String> entry:map.entrySet()) {//iterating through hash map using entry set(for each loop)
 		
 			System.out.println(entry.getKey()+":"+entry.getValue());
 		}
