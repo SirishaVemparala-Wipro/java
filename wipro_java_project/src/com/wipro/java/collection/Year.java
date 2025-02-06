@@ -9,7 +9,7 @@ import java.util.Comparator;
 class Year implements Comparator<MovieComparator> {
 
 	public int compare(MovieComparator m1,MovieComparator m2) {
-		return Double.compare(m1.getY(),m2.getY());
+		return Integer.compare(m1.getY(),m2.getY());
 		// TODO Auto-generated constructor stub
 	}
 
