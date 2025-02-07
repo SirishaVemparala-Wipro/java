@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+D:\handson\java\.metadata\.plugins\org.eclipse.jdt.core
-807423485.index
-104333625.index
-1865797976.index

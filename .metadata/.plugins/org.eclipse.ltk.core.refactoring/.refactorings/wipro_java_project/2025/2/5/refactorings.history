@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename compilation unit &apos;com.wipro.java.MyClass.java&apos; to &apos;Main.java&apos;&#x0D;&#x0A;- Original project: &apos;wipro_java_project&apos;&#x0D;&#x0A;- Original element: &apos;com.wipro.java.MyClass.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.wipro.java.Main.java&apos;" description="Rename compilation unit &apos;MyClass.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.wipro.java{MyClass.java" name="Main.java" references="false" stamp="1738410079889" version="1.0"/>
-</session>
