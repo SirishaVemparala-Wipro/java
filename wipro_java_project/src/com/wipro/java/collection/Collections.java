@@ -1,41 +1,57 @@
 package com.wipro.java.collection;
 
-import java.util.*;
-public class Collections
-{
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
 
-	    public static void main(String[] args) {
-	        // 1. ArrayList Operations
-	        List<String> arrayList = new ArrayList<>();
-	        arrayList.add("Apple");
-	        arrayList.add("Banana");
-	        arrayList.add("Cherry");
-	        System.out.println("ArrayList: " + arrayList);
-	        arrayList.remove(1); // Remove "Banana"
-	        System.out.println("After removing index 1: " + arrayList);
+public class Collections { // Class name remains "Collections"
+    public static void main(String[] args) {
+        // 1. Array Implementation
+        int[] arr = {10, 20, 30, 40, 50};
+        System.out.println("Array Elements:");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println("Element at index " + i + ": " + arr[i]);
+        }
 
-	        // 2. LinkedList Operations
-	        List<Integer> l1 = new ArrayList<>();
-	        l1.add(10);
-	        l1.add(20);
-	        l1.add(30);
-	        System.out.println("\nLinkedList: " +l1);
-	        l1.removeFirst(); // Remove first element
-	        System.out.println("After removing first element: " + l1);
+        // 2. ArrayList Implementation
+        List<Integer> arrayList = new ArrayList<>();
+        for (int i = 1; i <= 5; i++) {
+            arrayList.add(i);
+        }
+        System.out.println("\nArrayList: " + arrayList);
+        arrayList.remove(3);
+        System.out.println("After Removing Element at Index 3: " + arrayList);
 
-	        // 3. HashMap Operations
-	        Map<Integer, String> map = new HashMap<>();
-	        map.put(1, "One");
-	        map.put(2, "Two");
-	        map.put(3, "Three");
-	        System.out.println("\nMap: " + map);
-	        map.remove(2); // Remove key 2
-	        System.out.println("After removing key 2: " + map);
+        // 3. LinkedList Implementation (Fixed IndexOutOfBoundsException)
+        List<Integer> l1 = new ArrayList<>();
+        l1.add(0);
+        l1.add(6);
+        System.out.println("\nLinkedList: " + l1);
 
-	        // Iterating over a Map
-	        System.out.println("\nIterating over Map:");
-	        for (Map.Entry<Integer, String> entry : map.entrySet()) {
-	            System.out.println(entry.getKey() + ": " + entry.getValue());
-	        }
-	    }
-	}
+        if (l1.size() > 2) { // Avoid removing an index that does not exist
+            l1.remove(2);
+            System.out.println("After Removing Element at Index 2: " + l1);
+        } else {
+            System.out.println("Skipping removal: Index 2 does not exist.");
+        }
+
+        // 4. HashMap Implementation
+        Map<Integer, String> map = new HashMap<>();
+        map.put(1, "Sirisha");
+        map.put(2, "Prathyusha");
+        map.put(3, "Surya");
+        map.put(4, "Padma");
+
+        System.out.println("\nHashMap Elements:");
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+
+        map.remove(2);
+        System.out.println("\nHashMap After Removing Key 2:");
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+}
