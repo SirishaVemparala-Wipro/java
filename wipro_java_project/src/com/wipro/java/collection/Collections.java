@@ -1,11 +1,9 @@
 package com.wipro.java.collection;
-
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap;
-
-public class Collections { // Class name remains "Collections"
+public class Collections { 
     public static void main(String[] args) {
         // 1. Array Implementation
         int[] arr = {10, 20, 30, 40, 50};
@@ -23,7 +21,7 @@ public class Collections { // Class name remains "Collections"
         arrayList.remove(3);
         System.out.println("After Removing Element at Index 3: " + arrayList);
 
-        // 3. LinkedList Implementation (Fixed IndexOutOfBoundsException)
+        // 3. LinkedList Implementation 
         List<Integer> l1 = new ArrayList<>();
         l1.add(0);
         l1.add(6);
