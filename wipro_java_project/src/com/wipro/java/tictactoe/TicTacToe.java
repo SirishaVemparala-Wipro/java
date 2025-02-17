@@ -10,18 +10,18 @@ class TicTacToe {
 				board[row][col]=' ';//initialize the 3X3 2D array board with empty spaces
 			}
 		}
-		char player = 'X';
-		boolean gameOver=false;
-		Scanner scanner=new Scanner(System.in);
+		char player = 'X';// Start with player 'X'
+		boolean gameOver=false;//flag to check if game is over
+		Scanner scanner=new Scanner(System.in);//take i/p from user
 		while(!gameOver) {
 			printBoard(board);
 			System.out.print("Player "+player+" enter: ");
 			int row=scanner.nextInt();
 			int col=scanner.nextInt();
 			System.out.println();
-			if(board[row][col] == ' ') {
-				board[row][col] = player; 
-				gameOver=haveWon(board,player);
+			if(board[row][col] == ' ') {// Check if the cell is empty
+				board[row][col] = player; // Place the player's mark on the board
+				gameOver=haveWon(board,player); //Check if the player has won
 				if(gameOver) {
 					System.out.println("Player "+player+ " has won: ");
 				}
