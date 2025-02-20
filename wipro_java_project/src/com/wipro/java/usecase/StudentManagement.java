@@ -1,4 +1,4 @@
-package com.wipro.java.usecase2;
+package com.wipro.java.usecase;
 
 import java.util.*;
 import java.util.stream.*;
